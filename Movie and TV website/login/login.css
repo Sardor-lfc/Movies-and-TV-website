@@ -1,0 +1,148 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image-section img{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.dark-overlay{
+    top: 0;
+    
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  background: rgba(0, 0, 1, 0.7)
+}
+.background-dark{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    
+    margin-top: 50px;
+    transform:translate(-50%,-50%);
+    width: 500px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7)
+    
+}
+.sign-in-options{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+   margin-left: 70px;
+   position: relative;
+   top: 20%;
+    
+}
+.sign-in-options input, button{
+  width: 350px;    
+  height: 50px;
+  position:relative;
+  margin: 5px 10px;
+  border-radius:5px;
+}
+.sign-in-options button{
+   margin-top: 30px;
+   background: #e50914;
+   border: none;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+   
+}
+.sign-in-options button a{
+    color: #fff;
+    text-decoration: none;
+}
+.sign-in-options input::placeholder{
+    padding:0px 2px;
+    opacity: 0.70;
+    font-family: Verdana;
+}
+.sign-in-options input type{
+    padding:0px 20px;
+}
+.sign-in-options h1{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 35px 0px;
+}
+.sign-in-options input:focus ~ placeholder::before, 
+.sign-in-options input:valid ~ placeholder::before {
+    top: -5px;
+}
+
+
+.remember-me{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.remember-me input{
+    width: 18px;
+    height: 18px;
+    position:absolute;
+    left: 0;
+}
+.remember-me p{
+    color: #fff;
+   margin-left: -180px;
+   margin-top:5px; 
+   font-family: Verdana;
+   font-size: 14px;
+}
+.remember-me a{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    text-decoration: none;
+    font-family: Verdana;
+    transition: 1s ease;
+    
+}
+.remember-me a:hover{
+    border-bottom:2px solid #fff;
+}
+.new-in-site{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    color: #737373;
+    font-family: Verdana;
+}
+.new-in-site a{
+    color:  #fff;
+    text-decoration: none;
+    height: 100%;
+}
+.new-in-site a:hover{
+    border-bottom: 2px solid #fff;
+    height: 100%;
+}
+.protect{
+    height: 50px;
+    margin-top: 50px;
+    color: #737373;
+    font-family: Verdana;
+    font-size: 14px;
+}
+.protect a{
+    color: #0071eb;
+    text-decoration: none;
+}
+.protect a:hover{
+    border-bottom: 2px solid #0071eb;
+}
